@@ -126,6 +126,7 @@
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip4.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -1030,6 +1031,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.checkBox12);
             this.groupBox6.Controls.Add(this.checkBox6);
             this.groupBox6.Controls.Add(this.checkBox7);
             this.groupBox6.Controls.Add(this.checkBox4);
@@ -1311,6 +1313,19 @@
             this.toolStripMenuItem3.Text = "Listeyi Temizle";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(166)))), ((int)(((byte)(255)))));
+            this.checkBox12.Location = new System.Drawing.Point(6, 190);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(289, 20);
+            this.checkBox12.TabIndex = 72;
+            this.checkBox12.Text = "Yorumlara ve yanıtlara zaman damgası ekle";
+            this.checkBox12.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1460,6 +1475,7 @@
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox7;
+        public System.Windows.Forms.CheckBox checkBox12;
     }
 }
 

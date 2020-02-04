@@ -326,11 +326,14 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                         alan[sira_no].SendKeys(s.ToString());
                         await Task.Delay(150);
                     }
-                    string zaman = " " + DateTime.Now.ToString("HH:mm:ss");
-                    foreach (var c in zaman)
+                    if (checkBox12.Checked)
                     {
-                        alan[sira_no].SendKeys(c.ToString());
-                        await Task.Delay(150);
+                        string zaman = " " + DateTime.Now.ToString("HH:mm:ss");
+                        foreach (var c in zaman)
+                        {
+                            alan[sira_no].SendKeys(c.ToString());
+                            await Task.Delay(150);
+                        }
                     }
                     await Task.Delay(100);
                 });
@@ -482,11 +485,14 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                                                                 yanit_alani[sago1].SendKeys(s.ToString());
                                                                 await Task.Delay(250);
                                                             }
-                                                            string zaman = " " + DateTime.Now.ToString("HH:mm:ss");
-                                                            foreach (var c in zaman)
+                                                            if (checkBox12.Checked)
                                                             {
-                                                                yanit_alani[sago1].SendKeys(c.ToString());
-                                                                await Task.Delay(250);
+                                                                string zaman = " " + DateTime.Now.ToString("HH:mm:ss");
+                                                                foreach (var c in zaman)
+                                                                {
+                                                                    yanit_alani[sago1].SendKeys(c.ToString());
+                                                                    await Task.Delay(250);
+                                                                }
                                                             }
                                                         }                                                  
                                                     }
@@ -560,11 +566,14 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                                             web.SendKeys(c.ToString());
                                             await Task.Delay(300);
                                         }
-                                        string zaman = " " + DateTime.Now.ToString("HH:mm:ss");
-                                        foreach(var c in zaman)
+                                        if (checkBox12.Checked)
                                         {
-                                            web.SendKeys(c.ToString());
-                                            await Task.Delay(250);
+                                            string zaman = " " + DateTime.Now.ToString("HH:mm:ss");
+                                            foreach (var c in zaman)
+                                            {
+                                                web.SendKeys(c.ToString());
+                                                await Task.Delay(250);
+                                            }
                                         }
                                     }
                                     else { web.SendKeys(dataGridView2.Rows[i].Cells[3].Value.ToString()); }
@@ -704,7 +713,7 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
 
                                     await Task.Delay(Convert.ToInt32(numericUpDown1.Value) * 1000);
 
-                                    List<IWebElement> elements = new List<IWebElement>(driver.FindElements(By.TagName("ytd-video-renderer")));
+                                    List<IWebElement> elements = new List<IWebElement>(driver.FindElements(By.TagName(channel_or_videos)));
 
                                     for (int j = 0; j < elements.Count; j++)
                                     {
