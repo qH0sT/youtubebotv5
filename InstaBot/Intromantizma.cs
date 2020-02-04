@@ -29,7 +29,7 @@ namespace InstaBot
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "creature" && textBox2.Text == "sweatcorse")
+            if (textBox1.Text == "turkhackteam.org" && textBox2.Text == "turkhackteam.org")
             {
                 Form1.ch_suc = true;
                 suc = true;
