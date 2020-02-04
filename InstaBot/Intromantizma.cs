@@ -16,6 +16,7 @@ namespace InstaBot
         public Intromantizma()
         {
             InitializeComponent();
+            timer1.Stop();
         }
         int j = 3;
         private void timer1_Tick(object sender, EventArgs e)
