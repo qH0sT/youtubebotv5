@@ -1,0 +1,35 @@
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\bin\Debug\InstaBot.exe.config
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\bin\Debug\InstaBot.exe
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\bin\Debug\InstaBot.pdb
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\obj\Debug\InstaBot.Form1.resources
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\obj\Debug\InstaBot.Properties.Resources.resources
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\obj\Debug\InstaBot.csproj.GenerateResource.Cache
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\obj\Debug\InstaBot.exe
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\obj\Debug\InstaBot.pdb
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\bin\Debug\WebDriver.dll
+c:\users\harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\bin\Debug\WebDriver.xml
+C:\Users\Harun\documents\visual studio 2012\Projects\InstaBot\InstaBot\obj\Debug\InstaBot.csprojResolveAssemblyReference.cache
+C:\Users\Harun\Desktop\InstaBot\InstaBot\bin\Debug\InstaBot.exe.config
+C:\Users\Harun\Desktop\InstaBot\InstaBot\obj\Debug\InstaBot.exe
+C:\Users\Harun\Desktop\InstaBot\InstaBot\obj\Debug\InstaBot.pdb
+C:\Users\Harun\Desktop\InstaBot\InstaBot\bin\Debug\InstaBot.exe
+C:\Users\Harun\Desktop\InstaBot\InstaBot\bin\Debug\InstaBot.pdb
+C:\Users\Harun\Desktop\InstaBot\InstaBot\bin\Debug\WebDriver.dll
+C:\Users\Harun\Desktop\InstaBot\InstaBot\bin\Debug\WebDriver.xml
+C:\Users\Harun\Desktop\InstaBot\InstaBot\obj\Debug\InstaBot.Form1.resources
+C:\Users\Harun\Desktop\InstaBot\InstaBot\obj\Debug\InstaBot.Properties.Resources.resources
+C:\Users\Harun\Desktop\InstaBot\InstaBot\obj\Debug\InstaBot.csproj.GenerateResource.Cache
+C:\Users\Harun\Desktop\InstaBot\InstaBot\obj\Debug\InstaBot.csprojResolveAssemblyReference.cache
+D:\InstaBot\InstaBot\bin\Debug\InstaBot.exe.config
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.exe
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.pdb
+D:\InstaBot\InstaBot\bin\Debug\InstaBot.exe
+D:\InstaBot\InstaBot\bin\Debug\InstaBot.pdb
+D:\InstaBot\InstaBot\bin\Debug\WebDriver.dll
+D:\InstaBot\InstaBot\bin\Debug\WebDriver.xml
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.Form1.resources
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.Properties.Resources.resources
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.csproj.GenerateResource.Cache
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.Intromantizma.resources
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.Form2.resources
+D:\InstaBot\InstaBot\obj\Debug\InstaBot.csprojResolveAssemblyReference.cache
