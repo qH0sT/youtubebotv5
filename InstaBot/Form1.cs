@@ -43,16 +43,6 @@ namespace InstaBot
             dataGridView2.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(78, 184, 206);
             dataGridView2.EnableHeadersVisualStyles = false;
         }
-        public static string Base64Sifrele(string metin)
-        {
-            byte[] baytlar = Encoding.UTF8.GetBytes(metin);
-            return Convert.ToBase64String(baytlar);
-        }
-        public static string Base64Desifrele(string sifreli_metin)
-        {
-            byte[] sifreli_baytlar = Convert.FromBase64String(sifreli_metin);
-            return Encoding.UTF8.GetString(sifreli_baytlar);
-        }
         int i = 0;
         string channel_or_videos = "ytd-video-renderer";
         IWebDriver driver;
@@ -979,7 +969,12 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                             button3.Enabled = true;
                             button8.Enabled = true;
                         });
-                        driver = new ChromeDriver();
+                        ChromeOptions chromeOptions = new ChromeOptions();
+                        chromeOptions.AddArgument("disable-infobars");
+                        chromeOptions.AddArguments("--allow-file-access");
+                        chromeOptions.AddArgument("--disable-web-security");
+                        chromeOptions.AddArgument("--allow-running-insecure-content");
+                        driver = new ChromeDriver(chromeOptions);
                         driver.Manage().Window.Maximize(); //Pencereyi tam ekran yapıyoruz.                       
                         driver.Navigate().GoToUrl("https://accounts.google.com/ServiceLogin");
                        
@@ -1001,7 +996,7 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                         await Task.Delay(Convert.ToInt32(numericUpDown1.Value) * 1000);
 
                         IWebElement webt = driver.FindElement(By.XPath("//*[@id='password']/div[1]/div/div[1]/input"));
-                        webt.SendKeys(Base64Desifrele(listView2.Items[0].SubItems[1].Text));
+                        webt.SendKeys(listView2.Items[0].SubItems[1].Text);
 
                         IWebElement wwe = driver.FindElement(By.Id("passwordNext"));
                         wwe.Click();
@@ -1036,7 +1031,7 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
 
 
                             StreamWriter sw = new StreamWriter(Environment.CurrentDirectory + @"\Hatali_sifre.txt");
-                            hatali_sfr.Add(listView2.Items[0].Text + " Şifre: " + Base64Desifrele(listView2.Items[0].SubItems[1].Text));
+                            hatali_sfr.Add(listView2.Items[0].Text + " Şifre: " +listView2.Items[0].SubItems[1].Text);
                             foreach (string isim_bulamadim in hatali_sfr)
                             {
                                 sw.WriteLine(isim_bulamadim);
@@ -1057,7 +1052,7 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                     {
 
                         StreamWriter sw = new StreamWriter(Environment.CurrentDirectory + @"\Hatali_mailler.txt");
-                        hatali_mai.Add(listView2.Items[0].Text + " Şifre: " + Base64Desifrele(listView2.Items[0].SubItems[1].Text));
+                        hatali_mai.Add(listView2.Items[0].Text + " Şifre: " + listView2.Items[0].SubItems[1].Text);
                         foreach (string dgsken_ismi_bulamiyorum in hatali_mai)
                         {
                             sw.WriteLine(dgsken_ismi_bulamiyorum);
@@ -1188,7 +1183,7 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
                 if (!string.IsNullOrEmpty(e_posta) || !string.IsNullOrEmpty(sifre))
                 {
                     ListViewItem lvi = new ListViewItem(e_posta);
-                    lvi.SubItems.Add(Base64Sifrele(sifre));
+                    lvi.SubItems.Add(sifre);
                     listView2.Items.Add(lvi);
                 }
             
@@ -1401,7 +1396,7 @@ dataGridView2.Rows[i].Cells[1].Value.ToString() +
             if (emil.Length == 0) //eğer hata yoksa
             {
                 IWebElement webt = driver.FindElement(By.XPath("//*[@id='password']/div[1]/div/div[1]/input")); //emailde hata yoksa şifreye geç
-                webt.SendKeys(Base64Desifrele(listView2.Items[0].SubItems[1].Text));
+                webt.SendKeys(listView2.Items[0].SubItems[1].Text);
                 IWebElement wwe = driver.FindElement(By.Id("passwordNext"));
                 wwe.Click();
                 try
